@@ -1,2 +1,14 @@
 *.class
 *.jar
+build/
+bin/
+tmp/
+temp/
+test/
+*.bak
+.metadata/
+.settings/
+.project/
+.classpath
+*.launch
+

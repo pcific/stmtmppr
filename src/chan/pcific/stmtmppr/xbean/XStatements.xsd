@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="java:chan.pcific.stmtmppr"
+	xmlns:tns="java:chan.pcific.stmtmppr"
+	elementFormDefault="unqualified">
+	<element name="statements">
+		<complexType>
+			<sequence>
+				<element name="statement" type="tns:statementType" minOccurs="0" maxOccurs="unbounded">
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="statementType">
+		<simpleContent>
+			<extension base="string">
+				<attribute name="id" type="string" use="required"></attribute>
+			</extension>
+		</simpleContent>
+	</complexType>
+</schema>
+

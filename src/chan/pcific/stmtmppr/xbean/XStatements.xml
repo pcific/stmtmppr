@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<statements>
+	<statement id="stmt1"><![CDATA[ 
+SELECT * FROM T1
+]]></statement>
+
+	<statement id="stmt2"><![CDATA[ 
+SELECT * FROM T2
+]]></statement>
+
+	<statement id="stmt3"><![CDATA[ 
+INSERT INTO T3 VALUES (1, 'A')
+]]></statement>
+
+</statements>
+
+
