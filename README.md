@@ -7,7 +7,7 @@ simpler version of mybatis, but LinkedHashMap and other similar classes are used
 
 ## 1 Minute Tutorial 
 
-1. configure a statement in xml file.  
+* configure a statement in xml file.  
 ```xml 
 	<statement id="stmt01"><![CDATA[ 
 SELECT col01, col02 FROM table01 WHERE col01 < ${param01}
@@ -15,14 +15,14 @@ SELECT col01, col02 FROM table01 WHERE col01 < ${param01}
 
 ```
 
-2. prepare a parameter object.
+* prepare a parameter object.
 ```java
 LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
 params.put("param01", 3);
 ... 
 ```
 
-3. invoke StmtMapper class method 
+* invoke StmtMapper class method 
 ```java
 StmtMapper mapper = new StmtMapper("some/package/my-stmtmppr-conf.xml");
 String stmtId     = "stmt01";
@@ -34,7 +34,7 @@ try{
 }
 ```
 
-4. result object looks like this
+* result object looks like this
 ```
 List<LinkedHashMap<String , Object>> contains 
   1. LinkedHashMap<String , Object> -> {col01:  1, col02: "A" }
